@@ -1,12 +1,16 @@
+@font-face{
+        src: url(./OnlineWebFonts_COM_80ef503ced22edcf6c9579e60e6e129d/@font-face/6d176e0d797b5cd24d4053797712922e.ttf)
+        font-family: 'NewArlica';}
+
 .row-header{
     margin: 0px auto;
     padding: 0px auto;
-    
+    font-family: NewArlica;
 }
 .row-content{
     margin: :0px auto;
     padding: 50px 0px 50px 0px;
-    border-bottom: 1px ridge;
+    border-bottom: 1px ridge rgba(62, 69, 81, 0.3);
     min-height:400px;
 }
 .footer{
@@ -26,4 +30,12 @@ address{
     font-size: 80%;
     margin: 0px;
     color: #0f0f0f;
+}
+body{
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+}
+
+.navbar-dark{
+    background-color: #123;
 }

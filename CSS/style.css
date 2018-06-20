@@ -10,8 +10,9 @@
 .row-content{
     margin: :0px auto;
     padding: 50px 0px 50px 0px;
-    border-bottom: 1px ridge rgba(62, 69, 81, 0.3);
+    border-bottom: 1px ridge #90caf9;
     min-height:400px;
+    
 }
 .footer{
     background-color: #d1c4e9;
@@ -47,3 +48,52 @@ body{
 .navbar-dark ,.navbar-brand ,.navbar-nav ,.nav-link{
     color: #123 !important;
 }
+.btn,.btn-1 {
+	border-radius: 50px;
+	/* border: navajowhite; */
+	background-color: transparent;
+	color: black;
+    opacity: 0.6;
+    border: 1px solid #0069d9;
+    width: 150px;
+    color: #0069d9;
+}
+.btn:hover,.btn-1:hover{
+    background-color: #0069d9;
+    opacity: 1;
+    border: none;
+    
+}
+.w-75 {
+	width: 75% !important;
+	border-bottom: 2px solid #0069d9;
+	padding-bottom: 13px;
+}
+.tab-content{
+    border-left: 1px solid  #ddd;
+    border-right: 1px solid  #ddd;
+    border-bottom: 1px solid  #ddd;
+    padding: 10px;
+}
+.btn-1{
+        border-color: #123;
+        color: #123;
+        opacity: 0.5;
+}
+    .btn-1:hover{
+        background-color: #123;
+        color: white;
+    }
+    .carousel{
+        background-color:#123;
+    }
+    .carousel-item{
+        height: 300px;
+    }
+    .carousel-item img{
+        position: absolute;
+        top:0;
+        left: 0;
+        min-height:300px;
+        width: 400px;
+    }

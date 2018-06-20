@@ -5,8 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport">
     <title>Ristorante Con Fusion</title>
+    <!-- build:css CSS/main.css -->
     <link rel="stylesheet"     type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <!-- endbuild -->
 </head>
 
 <body>
@@ -24,33 +26,84 @@
                                 <li class="nav-item"><a class="nav-link" href="./contactus.html">Contact</a></li>
                             </ul>
                     </div>
+                    <button type="button" class="btn btn-1" data-toggle="modal"  data-target="#loginModal">Login</button>
             </div>
 
     </nav>
-    <header class="jumbotron">
-        <div class="container">
-            <div class="row row-header">
-                <div class="col12 col-sm-6">
-                    <h1>Ristorante con Fusion</h1>
-                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+    <div class="modal fade" id="loginModal" role="dialog" >
+      
+        <div class="modal-dialog modal-lg" role="content">
+               <div class="modal-content">
+                    <div class="modal-header">
+                            <h2>Login</h2>
+                            <button style="background-color:transparent;border:none" data-dismiss="modal" >&times;</button>
+                    </div>
+                    <div class="modal-body"  class="container" >
+                        <div  class="form-group row">
+                            <form class="form-group">
+                                Username: <input class="col-12 " class="form-control" type="text"><br>
+                                Password: <input class="col-12 " class="form-control" type="password">
+                            </form>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="col-12 col-sm align-self-center">
-                    <img  src="./images/daba-logo-51817B011D-seeklogo.com.gif.png" class="img-fluid">
-                </div>
-            </div>
         </div>
-    </header>
+    </div>
 
     <div class="container">
+        <div class="row row-content">
+            <div class="col">
+                <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img class="d-bock img-fluid" src="./images/Black-Mustard-Seeds-Spice-ThePicanteKitchen.co_.uk_0d2ed055-35f7-43cc-8d41-c2ac3c619d7e_2000x.jpeg">
+                            <div class="carousel-caption d-done d-md-block">
+                                   <h2 >Mustard-Seed <span class="badge badge-danger"> NEW</span></h2>
+
+                                   <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <img class="d-bock img-fluid" src="./images/compressed-mauh.jpg">
+                            <div class="carousel-caption d-done d-md-block">
+                                   <h2 >Mauh <span class="badge badge-danger"> NEW</span></h2>
+
+                                   <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <img class="d-bock img-fluid" src="./images/Untitled-4.jpg">
+                            <div class="carousel-caption d-done d-md-block">
+                                   <h2 >Jowar <span class="badge badge-danger"> NEW</span></h2>
+
+                                   <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                            </div>
+                       
+                        </div>
+                    </div>
+                        <ol class="carousel-indicators">
+                            <li data-target="#mycarousel" role="button" class="active" data-slide-to="0"></li>
+                            <li data-target="#mycarousel" role="button" data-slide-to="1"></li>
+                            <li data-target="#mycarousel" role="button" data-slide-to="2"></li>
+                        </ol>
+                        <a class="carousel-control-prev" href="#mycarousel" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+                        <a class="carousel-control-next" href="#mycarousel" data-slide="next"><span class="carousel-control-next-icon"></span></a>
+
+                </div>
+
+            </div>
+
+        </div>
         <div class="row row-content alig-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
-            <div class="col col-sm order-sm-first col-md">
+            <div class=" order-sm-first">
                  <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="./images/Dal-Tadka.jpg" alt="uttapiza" height="200px" width="200px">
-                    <div class="media-body">
-                        <h2 class="mt-0">Uthappizza <span class="badge  badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$12.5</span></h2>
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="./images/Dal-Tadka.jpg" width="300px" alt="uttapiza" height="200px" width="200px">
+                    <div class="media-body col col-sm col-md">
+                        <h2 class="mt-0">Uthappizza <span class="badge  badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$2.5</span></h2>
                         <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
                     </div>
                 </div>
@@ -60,11 +113,14 @@
 
 
         <div class="row row-content align-item-center">
+            <div>
+                <img class="img-fluid d-flex mr-3 img-thumbnail align-self-center"  width="300px"  height="200px" src="./images/vf-700x420.jpg">
+            </div>
             <div class="col-12 col-sm-4 col-md-3">
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
+                <h2>Weekend Grand Buffet <span class="badge badge-pill badge-danger">NEW</span></h2>
                 <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
             </div>
         </div>
@@ -87,6 +143,49 @@
              </div>
          </div>
     </div>
+    <div class="container padding-0">
+       <div class="row padding-0">
+        <div class=" row-content  col-12 col-md-4" class="container">
+                    <div class="card w-75 rht">
+                        <div class="col-12">
+                              <img width="300px" height="150px" class=" img-thumbnail align-self-center" src="./images/AN486-Vegan-Pizza-732x549-thumb.jpg">
+                        </div>
+                        <div class="col-12">
+                            <h5 class="card-title" >Veg Pizza</h5>
+                            <p class="card-text">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences.</p>
+                            <a href="#" class="btn btn-primary">Order</a>
+                        </div>
+                    </div>
+        </div>
+        <div class="row-content  col-12 col-md-4" class="container">
+                    <div class="card w-75 rht">
+                        <div class="col-12">
+                              <img width="300px" height="120px" class=" img-thumbnail align-self-center" src=".\images\IMG_0571.JPG">
+                        </div>
+                        <div class="col-12">
+                            <h5 class="card-title" >Awadi Thali</h5>
+                            <p class="card-text">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences.</p>
+                            <a href="#" class="btn btn-primary">Order</a>
+                        </div>
+                    </div>
+        </div>
+        <div class="row-content   col-12 col-md-4" class="container">
+                    <div class="card w-75 rht">
+                        <div class="col-12">
+                              <img width="300px" height="150px" class=" img-thumbnail align-self-center" src=".\images\img_2009.jpg">
+                        </div>
+                        <div class="col-12">
+                            <h5 class="card-title" >Thair Idli</h5>
+                            <p class="card-text">Yogurt in known as Thair in Tamil and Dahi in Hindi. International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences.</p>
+                            <a href="#" class="btn btn-primary">Order</a>
+                        </div>
+                    </div>
+        </div>
+
+    </div>
+    </div>
+  
+    
     <footer class="footer">
         <div class="container">
             <div class="row">             
@@ -128,9 +227,12 @@
            </div>
         </div>
     </footer>
+    <!-- build:js scripts/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- endbuild -->
 </body>
+
 
 </html>
